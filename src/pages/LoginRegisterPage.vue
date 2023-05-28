@@ -1,5 +1,5 @@
 <template>
-    <section class="h-100 gradient-form vw-100 vh-100" style="background-color: #eee;">
+    <register class="h-75 gradient-form vw-100" style="background-color: #eee; padding-: 5rem;">
         <div class="container py-5 h-100">
             <div class="row d-flex justify-content-center align-items-center h-100">
                 <div class="col-xl-10">
@@ -14,7 +14,7 @@
                                         <h4 class="mt-1 mb-5 pb-1">Chat GG better than the copy ;)</h4>
                                     </div>
 
-                                    <form>
+                                    <form @keypress.enter="startLogin">
                                         <p>Please login to your account</p>
 
                                         <div class="form-outline mb-2">
@@ -30,10 +30,7 @@
 
                                         <div class="text-center pt-1 mb-5 pb-1">
                                             <button
-                                              class="btn btn-primary btn-block
-                                              fa-lg
-                                              gradient-custom-2
-                                              mb-3"
+                                              class="btn btn-primary btn-block fa-lg gradient-custom-2 mb-3"
                                               type="button"
                                               @click="startLogin"
                                               :disabled="loginInProcess"
@@ -42,10 +39,10 @@
                                             </button>
                                         </div>
 
-                                        <div class="d-flex align-items-center justify-content-center pb-4">
+                                        <!-- <div class="d-flex align-items-center justify-content-center pb-4">
                                             <p class="mb-0 me-2">¿No tienes una cuenta?</p>
                                             <button type="button" class="btn btn-outline-danger">Create new</button>
-                                        </div>
+                                        </div> -->
 
                                     </form>
 
@@ -64,7 +61,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </register>
 </template>
 
 <script>
@@ -79,13 +76,17 @@ export default {
   },
   methods: {
     async startLogin(){
-      this.loginInProcess = true
-      if (!this.email || !this.password) return
-      const {token} = await AuthService.login(this.email, this.password)
-      this.loginInProcess = false
-
-      localStorage.setItem('token', token)
-      this.$router.push('/users')
+        try {
+            this.loginInProcess = true
+            if (!this.email || !this.password) return
+            const {token} = await AuthService.login(this.email, this.password)
+            this.loginInProcess = false
+            localStorage.setItem('token', token)
+            this.$router.push('/users')
+        } catch (error) {
+            this.loginInProcess = false
+        }
+      
 
     }
   }

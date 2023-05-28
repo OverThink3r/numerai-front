@@ -3,6 +3,8 @@ import LoginRegisterPage from "../pages/LoginRegisterPage.vue";
 import UsersPage from "../pages/UsersPage.vue";
 import NoPageFound from "../pages/NoPageFound.vue";
 import {apiClient} from "../api/chatggapi.js";
+import ChatPage from "../pages/ChatPage.vue";
+import Index from "../pages/Index.vue"
 const routes = [
   {
     path: '/auth/login',
@@ -17,7 +19,17 @@ const routes = [
   {
     path: '/:pathMatch(.*)*',
     component: NoPageFound
+  },
+  {
+    path: '/chat',
+    name: 'chatPage',
+    component: ChatPage,
+  },
 
+  {
+    path: '/',
+    name: 'index',
+    component: Index,
   }
 ]
 
@@ -28,20 +40,6 @@ const router = createRouter({
 
 
 const userCanAccess = async () => {
-
-  // return new Promise(async resolve => {
-  //
-  //   const token = localStorage.getItem('token')
-  //
-  //   if (!token) {
-  //     resolve(false)
-  //   } else {
-  //     const {data} = await apiClient.post('/auth/checktoken', {token})
-  //     console.log('respuesta')
-  //     console.log(data)
-  //     resolve( data.tokenValid )
-  //   }
-  // })
 
     const token = localStorage.getItem('token')
 
@@ -56,7 +54,7 @@ const userCanAccess = async () => {
 
 router.beforeEach(async (to, from, next) => {
   const isAuthenticated = await userCanAccess()
-  if (to.name !== 'loginPage' && !isAuthenticated) next({name: 'loginPage'})
+  if (!['loginPage', 'index'].includes(to.name) && !isAuthenticated) next({name: 'loginPage'})
   else next()
 })
 
