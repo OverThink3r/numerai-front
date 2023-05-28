@@ -2,7 +2,8 @@
     <div class="container">
        <div class="chatbox">
             <div class="header">
-                <h4> <img src='img/Isotipo Positivo.png' class='imgRedonda'/> NumerAI </h4>       
+                <h4> <img src='/assets/img/NumerAI/Isotipo_Positivo.png' class='imgRedonda' alt=""/>  NumerAI </h4>
+
             </div>
                 <div class="body" id="chatbody">
                 <p class="alicia">Hola! soy NumerAI, Estoy para responder preguntas relacionadas con nuestra pagina . Espero poder ayudarte.</p>
@@ -13,7 +14,7 @@
                     <input type="text" name="chat" id="chat" placeholder="Dudas que tengas">
                 </div>
                 <div>
-                    <input type="button" value="Enviar" id="btn" @click="showAlert">
+                    <input type="button" value="Enviar" id="btn" >
                 </div>
             </form>
    </div>

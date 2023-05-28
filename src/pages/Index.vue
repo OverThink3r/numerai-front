@@ -19,7 +19,7 @@
     <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
       <a href="index.html" class="logo d-flex align-items-center">
         <!-- Uncomment the line below if you also wish to use an image logo -->
-        <img src="assets/img/NumerAI/NumeraAI Positivo.png" alt="">
+        <img src="/assets/img/NumerAI/NumeraAI_Positivo.png" alt="">
         <!-- <h1>NumerAI<span>.</span></h1> -->
       </a>
       <nav id="navbar" class="navbar">
@@ -52,7 +52,7 @@
           </div>
         </div>
         <div class="col-lg-6 order-1 order-lg-2">
-          <img src="assets/img/hero-img.svg" class="img-fluid" alt="" data-aos="zoom-out" data-aos-delay="100">
+          <img src="/assets/img/hero-img.svg" class="img-fluid" alt="" data-aos="zoom-out" data-aos-delay="100">
         </div>
       </div>
     </div>
@@ -110,7 +110,7 @@
         <div class="row gy-4">
           <div class="col-lg-6">
             <h3>Voluptatem dignissimos provident quasi corporis</h3>
-            <img src="assets/img/about.jpg" class="img-fluid rounded-4 mb-4" alt="">
+            <img src="/assets/img/about.jpg" class="img-fluid rounded-4 mb-4" alt="">
             <p>Creemos que los números son más que simples cifras. Son la clave para desbloquear información valiosa y tomar decisiones informadas. Nuestro equipo de expertos en inteligencia artificial se dedica a desarrollar algoritmos innovadores y tecnologías de vanguardia para transformar datos numéricos en conocimientos prácticos y accionables.</p>
             <p>Nuestro enfoque se basa en una combinación única de análisis avanzado, aprendizaje automático y técnicas de inteligencia artificial.</p>
           </div>
@@ -134,7 +134,7 @@
               </p>
 
               <div class="position-relative mt-4">
-                <img src="assets/img/about-2.jpg" class="img-fluid rounded-4" alt="">
+                <img src="/assets/img/about-2.jpg" class="img-fluid rounded-4" alt="">
                 <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" class="glightbox play-btn"></a>
               </div>
             </div>
@@ -150,7 +150,7 @@
         <div class="row gy-4 align-items-center">
 
           <div class="col-lg-6">
-            <img src="assets/img/stats-img.svg" alt="" class="img-fluid">
+            <img src="/assets/img/stats-img.svg" alt="" class="img-fluid">
           </div>
 
           <div class="col-lg-6">
@@ -273,7 +273,7 @@
 
           <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="100">
             <div class="member">
-              <img src="assets/img/team/team-1.jpg" class="img-fluid" alt="">
+              <img src="/assets/img/team/team-1.jpg" class="img-fluid" alt="">
               <h4>Walter White</h4>
               <span>Web Development</span>
               <div class="social">
@@ -287,7 +287,7 @@
 
           <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="200">
             <div class="member">
-              <img src="assets/img/team/team-2.jpg" class="img-fluid" alt="">
+              <img src="/assets/img/team/team-2.jpg" class="img-fluid" alt="">
               <h4>Sarah Jhinson</h4>
               <span>Marketing</span>
               <div class="social">
@@ -301,7 +301,7 @@
 
           <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="300">
             <div class="member">
-              <img src="assets/img/team/team-3.jpg" class="img-fluid" alt="">
+              <img src="/assets/img/team/team-3.jpg" class="img-fluid" alt="">
               <h4>William Anderson</h4>
               <span>Content</span>
               <div class="social">
@@ -315,7 +315,7 @@
 
           <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="400">
             <div class="member">
-              <img src="assets/img/team/team-4.jpg" class="img-fluid" alt="">
+              <img src="/assets/img/team/team-4.jpg" class="img-fluid" alt="">
               <h4>Amanda Jepson</h4>
               <span>Accountant</span>
               <div class="social">
